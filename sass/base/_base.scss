@@ -1,14 +1,14 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-shadow: inherit;
+  box-sizing: inherit;
 }
 
 html {
-  // To simplify rem calculations 
-  // 10px / 16px = 62.5% 
+  // To simplify rem calculations
+  // 10px / 16px = 62.5%
   // 1rem = 10px
   font-size: 62.5%;
 }
