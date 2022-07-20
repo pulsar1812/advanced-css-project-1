@@ -17,6 +17,39 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your Benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular Tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -28,7 +61,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -140,20 +175,16 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="util-center-text util-margin-bottom-big">
-          <h2 class="heading-secondary">
-            Most popular tours
-          </h2>
+          <h2 class="heading-secondary">Most popular tours</h2>
         </div>
 
         <div class="row">
           <div class="col-1-of-3">
             <div class="card">
               <div class="card__side card__side--front">
-                <div class="card__picture card__picture--1">
-                  &nbsp;
-                </div>
+                <div class="card__picture card__picture--1">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--1">
                     The Sea Explorer
@@ -175,7 +206,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -184,9 +215,7 @@
           <div class="col-1-of-3">
             <div class="card">
               <div class="card__side card__side--front">
-                <div class="card__picture card__picture--2">
-                  &nbsp;
-                </div>
+                <div class="card__picture card__picture--2">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--2">
                     The Forest Hiker
@@ -208,7 +237,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -217,9 +246,7 @@
           <div class="col-1-of-3">
             <div class="card">
               <div class="card__side card__side--front">
-                <div class="card__picture card__picture--3">
-                  &nbsp;
-                </div>
+                <div class="card__picture card__picture--3">&nbsp;</div>
                 <h4 class="card__heading">
                   <span class="card__heading-span card__heading-span--3">
                     The Snow Adventurer
@@ -241,7 +268,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -263,9 +290,7 @@
         </div>
 
         <div class="util-center-text util-margin-bottom-big">
-          <h2 class="heading-secondary">
-            We make people genuinely happy
-          </h2>
+          <h2 class="heading-secondary">We make people genuinely happy</h2>
         </div>
 
         <div class="row">
@@ -286,7 +311,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
                 temporibus a asperiores animi odit vitae, repellendus porro
                 incidunt fuga nam et totam dolore laborum iste corporis dolores,
-                unde, distinctio repellat.
+                unde, distinctio repellat. totam dolore laborum iste corporis
+                dolores, unde, distinctio repellat.
               </p>
             </div>
           </div>
@@ -310,6 +336,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
                 iure reiciendis placeat natus totam aliquid repudiandae magni
                 dolores, maxime accusantium quod. Quasi deserunt harum quos,
+                veritatis magni nam assumenda omnis? Quasi deserunt harum quos,
                 veritatis magni nam assumenda omnis?
               </p>
             </div>
@@ -327,9 +354,7 @@
             <div class="book__form">
               <form action="#" class="form">
                 <div class="util-margin-bottom-medium">
-                  <h2 class="heading-secondary">
-                    Start Booking Now
-                  </h2>
+                  <h2 class="heading-secondary">Start Booking Now</h2>
                 </div>
 
                 <div class="form__group">
@@ -394,8 +419,21 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            alt="Full logo"
+          />
+        </picture>
       </div>
+
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
@@ -425,6 +463,42 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary util-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary util-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            The following terminology applies to these Terms and Conditions,
+            Privacy Statement and Disclaimer Notice and all Agreements:
+            “Client”, “You” and “Your” refers to you, the person log on this
+            website and compliant to the Company's terms and conditions. “The
+            Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company.
+            “Party”, “Parties”, or “Us”, refers to both the Client and
+            ourselves. All terms refer to the offer, acceptance and
+            consideration of payment necessary to undertake the process of our
+            assistance to the Client in the most appropriate manner for the
+            express purpose of meeting the Client's needs in respect of
+            provision of the Company's stated services, in accordance with and
+            subject to, prevailing law of Netherlands. Any use of the above
+            terminology or other words in the singular, plural, capitalization
+            and/or he/she or they, are taken as interchangeable and therefore as
+            referring to same.
+          </p>
+          <a href="#" class="btn btn--green">Book Now</a>
+        </div>
+      </div>
+    </div>
 
     <!--
     <section class="grid-test">
